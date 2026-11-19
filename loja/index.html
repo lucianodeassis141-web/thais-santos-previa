@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thais Santos Acessórios · loja online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Satisfy&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--mag:#F50989;--rosa:#CE1477;--malva:#916679;--nude:#DDB08E;--tinta:#231A20;--cinza:#685B61;--linha:#EFE6EA;--fundo:#FAF6F7;--verde:#1FA855}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--tinta);background:#fff;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.serif{font-family:'Instrument Serif',serif;font-weight:400}
+.demo{background:var(--tinta);color:#fff;text-align:center;font-size:12px;padding:7px 12px;letter-spacing:.02em}
+.demo b{color:#FFB3D9}
+.faixa{background:var(--rosa);color:#fff;text-align:center;font-size:12.5px;font-weight:600;padding:7px 12px;letter-spacing:.04em}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+header .wrap{display:flex;align-items:center;gap:14px;height:66px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{width:40px;height:40px;border-radius:50%}
+.logo .n{font-family:'Instrument Serif',serif;font-size:22px;letter-spacing:.12em;color:var(--malva);line-height:1}
+.logo .n small{display:block;font-family:'DM Sans';font-size:9.5px;letter-spacing:.28em;color:var(--cinza);margin-top:3px}
+.busca{flex:1;display:none}
+.busca input{width:100%;max-width:420px;border:1px solid var(--linha);background:var(--fundo);border-radius:999px;padding:10px 16px;font:inherit}
+@media(min-width:800px){.busca{display:block}}
+.sac-btn{margin-left:auto;position:relative;display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:9px 14px;border-radius:999px;border:1px solid var(--linha)}
+.sac-btn i{font-style:normal;background:var(--rosa);color:#fff;border-radius:999px;min-width:20px;height:20px;display:grid;place-items:center;font-size:11.5px;padding:0 6px}
+.hero{background:linear-gradient(180deg,#FFF1F8,#fff);overflow:hidden}
+.hero .wrap{display:grid;gap:10px;align-items:center;padding-top:26px}
+@media(min-width:800px){.hero .wrap{grid-template-columns:1fr 1fr;padding-top:0}}
+.hero .txt{padding:10px 0 20px}
+.hero .sc{font-family:'Satisfy',cursive;color:var(--rosa);font-size:28px}
+.hero h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(38px,7vw,64px);line-height:1;margin:6px 0 14px}
+.hero h1 em{color:var(--mag)}
+.hero p{color:var(--cinza);max-width:430px}
+.hero .bt{display:inline-flex;margin-top:20px;background:var(--rosa);color:#fff;font-weight:700;padding:13px 22px;border-radius:999px;box-shadow:0 10px 24px rgba(245,9,137,.3)}
+.hero .foto{height:360px;position:relative}
+.hero .foto img{height:100%;width:100%;object-fit:cover;object-position:center 20%;border-radius:26px 26px 0 0}
+@media(min-width:800px){.hero .foto{height:480px}}
+.selos{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--linha);border-block:1px solid var(--linha)}
+@media(min-width:800px){.selos{grid-template-columns:repeat(4,1fr)}}
+.selos div{background:#fff;padding:14px 16px;font-size:13px;color:var(--cinza)}
+.selos b{display:block;color:var(--tinta);font-size:14px}
+.sec{padding:38px 0}
+.sec h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,5vw,42px);line-height:1.05}
+.sec h2 em{color:var(--mag)}
+.cats{display:flex;gap:8px;overflow-x:auto;padding:16px 0 4px;scrollbar-width:none}
+.cats button{flex:none;border:1px solid var(--linha);border-radius:999px;padding:8px 15px;font-size:13.5px;font-weight:600;background:#fff}
+.cats button.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.grade{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+@media(min-width:800px){.grade{grid-template-columns:repeat(4,1fr);gap:20px}}
+.prod{text-align:left}
+.prod .im{aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:var(--fundo);position:relative}
+.prod .im img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.prod:hover .im img{transform:scale(1.04)}
+.prod .tg{position:absolute;top:10px;left:10px;background:#fff;color:var(--rosa);font-size:11px;font-weight:700;border-radius:999px;padding:3px 9px}
+.prod h3{font-size:14px;font-weight:500;margin-top:9px;line-height:1.3}
+.prod .pr{font-weight:700;font-size:15.5px;margin-top:3px}
+.prod .pr small{font-weight:500;color:var(--cinza);font-size:12px;display:block}
+.prod .add{margin-top:8px;width:100%;border:1px solid var(--tinta);border-radius:999px;padding:9px;font-weight:700;font-size:13px}
+.prod .add:hover{background:var(--tinta);color:#fff}
+.sobre{background:var(--fundo)}
+.sobre .wrap{display:grid;gap:24px;align-items:center}
+@media(min-width:800px){.sobre .wrap{grid-template-columns:.8fr 1.2fr}}
+.sobre img{border-radius:22px;aspect-ratio:4/5;object-fit:cover;width:100%;max-height:440px}
+.sobre q{font-family:'Instrument Serif',serif;font-style:italic;font-size:26px;line-height:1.2;display:block;margin:12px 0;quotes:"\201C" "\201D"}
+.sobre p{color:var(--cinza)}
+footer{background:var(--tinta);color:#E9DCE3;padding:34px 0;font-size:13.5px}
+footer .wrap{display:grid;gap:18px}
+@media(min-width:800px){footer .wrap{grid-template-columns:repeat(3,1fr)}}
+footer b{color:#fff;display:block;margin-bottom:4px}
+/* gaveta */
+.veu{position:fixed;inset:0;background:rgba(35,26,32,.45);opacity:0;visibility:hidden;transition:.3s;z-index:40}
+.veu.on{opacity:1;visibility:visible}
+.gav{position:fixed;top:0;right:0;height:100%;width:min(420px,100%);background:#fff;z-index:50;transform:translateX(100%);transition:transform .35s;display:flex;flex-direction:column}
+.gav.on{transform:none}
+.gav .cab{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--linha)}
+.gav .cab h3{font-family:'Instrument Serif',serif;font-weight:400;font-size:26px}
+.gav .x{font-size:26px;line-height:1;padding:4px 8px}
+.gav .corpo{flex:1;overflow:auto;padding:16px 18px}
+.item{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--linha);font-size:13.5px}
+.item img{width:64px;height:80px;object-fit:cover;border-radius:10px}
+.item .q{display:flex;align-items:center;gap:6px;margin-top:6px}
+.item .q button{width:24px;height:24px;border:1px solid var(--linha);border-radius:50%;font-weight:700}
+.gav .pe{padding:16px 18px;border-top:1px solid var(--linha)}
+.tot{display:flex;justify-content:space-between;font-weight:700;font-size:17px;margin-bottom:12px}
+.pag{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.pag span{font-size:12px;border:1px solid var(--linha);border-radius:8px;padding:4px 9px;color:var(--cinza)}
+.fin{width:100%;background:var(--rosa);color:#fff;font-weight:700;border-radius:999px;padding:14px;font-size:15px}
+.vazio{color:var(--cinza);text-align:center;padding:40px 0}
+/* produto */
+.pp img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px}
+.pp h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:28px;line-height:1.1;margin:14px 0 4px}
+.pp .pr{font-size:20px;font-weight:700}
+.pp p{color:var(--cinza);margin:10px 0}
+.pp ul{list-style:none;font-size:13.5px;color:var(--cinza);display:grid;gap:4px;margin-bottom:14px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,150%);background:var(--tinta);color:#fff;padding:12px 18px;border-radius:14px;font-size:14px;z-index:60;transition:transform .3s}
+.toast.on{transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<div class="demo">Demonstração Intensolve · fotos e produtos reais da loja, <b>preços de exemplo</b></div>
+<div class="faixa">À pronta entrega · Enviamos para todo o Brasil</div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#"><img src="../assets/logo.png" alt=""><span class="n">THAIS SANTOS<small>ACESSÓRIOS</small></span></a>
+    <div class="busca"><input id="q" placeholder="Buscar óculos, relógio, prata 925..."></div>
+    <button class="sac-btn" id="abrir-sac">Sacola <i id="cont">0</i></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="txt">
+      <span class="sc">nova coleção</span>
+      <h1>Transforme seu look com um <em>novo acessório</em></h1>
+      <p>Óculos, prata 925, relógios, bolsas e laços escolhidos pela Thais, em Paraguaçu/MG, com envio para todo o Brasil.</p>
+      <a class="bt" href="#produtos">Ver a coleção</a>
+    </div>
+    <div class="foto"><img src="../assets/oculos-gatinho.jpg" alt="Óculos gatinho"></div>
+  </div>
+</section>
+<div class="selos">
+  <div><b>Envio para todo o Brasil</b>embalagem personalizada</div>
+  <div><b>Pix ou cartão</b>no próprio site</div>
+  <div><b>Retire na loja</b>Paraguaçu/MG</div>
+  <div><b>Atendimento no WhatsApp</b>(35) 98403-3170</div>
+</div>
+
+<section class="sec" id="produtos">
+  <div class="wrap">
+    <h2>Escolhidos <em>com carinho</em></h2>
+    <div class="cats" id="cats"></div>
+    <div class="grade" id="grade"></div>
+  </div>
+</section>
+
+<section class="sec sobre">
+  <div class="wrap">
+    <img src="../assets/oculos-sorriso.jpg" alt="Thais">
+    <div>
+      <span class="hero sc" style="background:none;font-family:Satisfy;color:var(--rosa);font-size:26px">sobre a loja</span>
+      <q>Mostrando a beleza e valores de mulheres que não têm medo de ousar.</q>
+      <p>A Thais Santos Acessórios nasceu em Paraguaçu/MG em 2016. Cada peça é fotografada na loja, no corpo, para você ver como fica de verdade antes de comprar.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Thais Santos Acessórios</b>Rua Oswaldo Costa, 86, Paraguaçu/MG<br>CNPJ 26.726.316/0001-59</div>
+    <div><b>Atendimento</b>WhatsApp (35) 98403-3170<br>instagram.com/thaissantosacessorios</div>
+    <div><b>Loja demonstrativa</b>Montada pela Intensolve. Preços e pagamento são simulação.</div>
+  </div>
+</footer>
+
+<div class="veu" id="veu"></div>
+<aside class="gav" id="gav-sac"><div class="cab"><h3>Sua sacola</h3><button class="x" data-fechar>×</button></div><div class="corpo" id="itens"></div><div class="pe"><div class="tot"><span>Total</span><span id="tot">R$ 0,00</span></div><div class="pag"><span>Pix</span><span>Cartão em até 3x</span><span>Frete calculado pelo CEP</span></div><button class="fin" id="fin">Finalizar pedido</button></div></aside>
+<aside class="gav" id="gav-prod"><div class="cab"><h3>Detalhes</h3><button class="x" data-fechar>×</button></div><div class="corpo pp" id="pp"></div></aside>
+<div class="toast" id="toast"></div>
+
+<script>
+const P=[
+ {id:1,n:'Óculos de sol gatinho preto',c:'Óculos',p:29.90,img:'oculos-gatinho.jpg',tg:'Mais vendido',d:'O gatinho que alonga o olhar. Leve, com proteção UV.'},
+ {id:2,n:'Bracelete de braço borboletas dourado',c:'Braceletes',p:39.90,img:'bracelete.jpg',tg:'Novo',d:'Duas borboletas que abraçam o braço. Ajustável.'},
+ {id:3,n:'Colar prata 925 ponto de luz',c:'Prata 925',p:89.90,img:'colar-prata.jpg',d:'Delicado para usar todo dia. Prata 925 legítima.'},
+ {id:4,n:'Relógio feminino quadrado prata',c:'Relógios',p:139.90,img:'relogio-prata.jpg',d:'Caixa quadrada e pulseira de elos. Fica lindo com prata.'},
+ {id:5,n:'Relógio clássico prata',c:'Relógios',p:189.90,img:'relogio-casio.jpg',d:'Visor branco, pulseira de aço. O básico que combina com tudo.'},
+ {id:6,n:'Laço de cabelo marrom',c:'Cabelo',p:24.90,img:'laco.jpg',tg:'Tendência',d:'Laço grande em tecido, com presilha firme.'},
+ {id:7,n:'Óculos retrô tartaruga',c:'Óculos',p:49.90,img:'oculos-bolso.jpg',d:'Armação tartaruga e lente marrom. Retrô na medida.'},
+ {id:8,n:'Bolsa Petite Jolie rosa',c:'Bolsas',p:259.90,img:'bolsa.jpg',d:'Bolsa de mão com lenço estampado. Petite Jolie original.'},
+ {id:9,n:'Garrafa térmica floral',c:'Garrafas',p:129.90,img:'garrafa.jpg',d:'Mantém gelado por horas. Estampa floral exclusiva.'},
+ {id:10,n:'Copo térmico estampado',c:'Garrafas',p:99.90,img:'copo.jpg',d:'Com tampa e estampa divertida.'},
+ {id:11,n:'Lenço de seda estampa onça',c:'Lenços',p:34.90,img:'lenco.jpg',d:'No pescoço, no cabelo, na bolsa ou na cintura.'},
+ {id:12,n:'Bracelete borboletas, vista de lado',c:'Braceletes',p:39.90,img:'bracelete-2.jpg',d:'O mesmo bracelete, para você ver o encaixe.'}
+];
+const WA='5535984033170', sac={};
+const brl=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+let cat='Tudo';
+const cats=['Tudo',...new Set(P.map(p=>p.c))];
+function desenharCats(){document.getElementById('cats').innerHTML=cats.map(c=>`<button class="${c===cat?'on':''}" data-c="${c}">${c}</button>`).join('');document.querySelectorAll('#cats button').forEach(b=>b.onclick=()=>{cat=b.dataset.c;desenharCats();desenhar();});}
+function desenhar(){const q=(document.getElementById('q').value||'').toLowerCase();const l=P.filter(p=>(cat==='Tudo'||p.c===cat)&&p.n.toLowerCase().includes(q));
+ document.getElementById('grade').innerHTML=l.map(p=>`<div class="prod"><button class="im" data-ver="${p.id}" style="display:block;width:100%"><img src="../assets/${p.img}" alt="${p.n}" loading="lazy">${p.tg?`<span class="tg">${p.tg}</span>`:''}</button><h3>${p.n}</h3><div class="pr">${brl(p.p)}<small>no Pix · ou 3x de ${brl(p.p/3)}</small></div><button class="add" data-add="${p.id}">Colocar na sacola</button></div>`).join('');
+ ligar();}
+function ligar(){document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>add(+b.dataset.add));document.querySelectorAll('[data-ver]').forEach(b=>b.onclick=()=>ver(+b.dataset.ver));}
+function add(id){sac[id]=(sac[id]||0)+1;atual();toast('Na sacola: '+P.find(p=>p.id===id).n);}
+function atual(){const ids=Object.keys(sac).filter(k=>sac[k]>0);let t=0,n=0;
+ document.getElementById('itens').innerHTML=ids.length?ids.map(id=>{const p=P.find(x=>x.id==id);t+=p.p*sac[id];n+=sac[id];return `<div class="item"><img src="../assets/${p.img}" alt=""><div>${p.n}<div class="q"><button data-m="${id}">-</button>${sac[id]}<button data-p="${id}">+</button></div></div><b>${brl(p.p*sac[id])}</b></div>`}).join(''):'<div class="vazio">Sua sacola está vazia.</div>';
+ if(!ids.length){t=0;n=0;}
+ document.getElementById('tot').textContent=brl(t);document.getElementById('cont').textContent=n;
+ document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{sac[b.dataset.m]--;atual();});document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{sac[b.dataset.p]++;atual();});}
+function ver(id){const p=P.find(x=>x.id===id);document.getElementById('pp').innerHTML=`<img src="../assets/${p.img}" alt=""><h4>${p.n}</h4><div class="pr">${brl(p.p)}</div><p>${p.d}</p><ul><li>À pronta entrega</li><li>Envio para todo o Brasil ou retirada em Paraguaçu/MG</li><li>Dúvida? Fale com a Thais no WhatsApp</li></ul><button class="fin" id="pp-add">Colocar na sacola</button>`;document.getElementById('pp-add').onclick=()=>{add(id);abrir('gav-sac');};abrir('gav-prod');}
+function abrir(g){document.querySelectorAll('.gav').forEach(x=>x.classList.remove('on'));document.getElementById(g).classList.add('on');document.getElementById('veu').classList.add('on');}
+function fechar(){document.querySelectorAll('.gav').forEach(x=>x.classList.remove('on'));document.getElementById('veu').classList.remove('on');}
+document.getElementById('abrir-sac').onclick=()=>abrir('gav-sac');
+document.getElementById('veu').onclick=fechar;document.querySelectorAll('[data-fechar]').forEach(b=>b.onclick=fechar);
+document.getElementById('q').oninput=desenhar;
+document.getElementById('fin').onclick=()=>{const ids=Object.keys(sac).filter(k=>sac[k]>0);if(!ids.length){toast('Escolha uma peça primeiro');return;}toast('Na loja real, aqui entra o pagamento por Pix ou cartão. Nesta demonstração o pedido não é enviado.');};
+let tt;function toast(m){const e=document.getElementById('toast');e.textContent=m;e.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('on'),2600);}
+desenharCats();desenhar();atual();
+</script>
+</body>
+</html>

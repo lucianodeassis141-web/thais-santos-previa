@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Thais Santos Acessórios</title>
+<meta name="description" content="Acessórios femininos em Paraguaçu/MG. Óculos, relógios, prata 925, bolsas e Petite Jolie. À pronta entrega, enviamos para todo o Brasil.">
+<link rel="icon" href="img/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Satisfy&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --magenta:#F50989; --rosa:#CE1477; --malva:#916679; --malva-esc:#6E4A5B;
+  --fundo:#F4F2F3; --cartao:#FFFFFF; --linha:#E7E1E4; --texto:#2B2127; --suave:#66555E;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--fundo);color:var(--texto);font-family:'DM Sans',system-ui,sans-serif;line-height:1.45;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.pagina{max-width:460px;margin:0 auto;background:var(--fundo);min-height:100vh;padding-bottom:40px}
+
+/* topo */
+.capa{position:relative;height:340px;overflow:hidden;background:#EDEDF1}
+.capa img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block}
+.capa::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(to bottom,rgba(244,242,243,0),var(--fundo))}
+.selo{position:absolute;top:16px;left:16px;z-index:2;background:rgba(255,255,255,.88);backdrop-filter:blur(6px);color:var(--malva-esc);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:99px}
+.perfil{position:relative;z-index:2;margin-top:-58px;text-align:center;padding:0 20px}
+.avatar{width:92px;height:92px;border-radius:50%;border:4px solid var(--fundo);display:block;margin:0 auto;box-shadow:0 6px 20px rgba(245,9,137,.22)}
+.nome{font-family:'Instrument Serif',serif;font-weight:400;font-size:34px;letter-spacing:.14em;color:var(--malva-esc);margin-top:14px;line-height:1}
+.script{font-family:'Satisfy',cursive;color:var(--magenta);font-size:30px;line-height:1;margin-top:2px;transform:rotate(-3deg);display:inline-block}
+.frase{color:var(--suave);font-size:15px;margin:14px auto 0;max-width:30ch}
+.local{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:13px;color:var(--malva-esc)}
+.local svg{width:14px;height:14px}
+
+/* principal */
+.bloco{padding:0 16px;margin-top:24px}
+.botao-principal{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:#D90479;color:#fff;font-weight:600;font-size:16px;padding:17px 20px;border-radius:16px;box-shadow:0 10px 24px -8px rgba(245,9,137,.55);transition:transform .15s ease,box-shadow .15s ease}
+.botao-principal:active{transform:scale(.98)}
+.botao-principal svg{width:22px;height:22px}
+.vantagens{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.vantagens span{font-size:12.5px;color:var(--malva-esc);background:#fff;border:1px solid var(--linha);padding:6px 11px;border-radius:99px}
+
+/* categorias */
+.titulo-secao{display:flex;align-items:baseline;justify-content:space-between;margin:34px 0 12px}
+.titulo-secao h2{font-family:'Instrument Serif',serif;font-weight:400;font-size:26px;color:var(--texto)}
+.titulo-secao h2 em{font-style:italic;color:var(--malva)}
+.titulo-secao small{font-size:12px;color:var(--suave)}
+.grade{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cat{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:#EDEDF1;display:block}
+.cat img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.cat:hover img{transform:scale(1.04)}
+.cat::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(43,20,32,.62) 0%,rgba(43,20,32,0) 46%)}
+.cat .rotulo{position:absolute;left:12px;right:12px;bottom:11px;z-index:2;color:#fff;display:flex;justify-content:space-between;align-items:flex-end}
+.cat strong{font-family:'Instrument Serif',serif;font-weight:400;font-size:21px;line-height:1.05}
+.cat .seta{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--magenta);display:grid;place-items:center;flex:none}
+.cat .seta svg{width:14px;height:14px}
+.cat.larga{grid-column:span 2;aspect-ratio:16/10}
+.cat.larga img{object-position:50% 62%}
+
+/* links */
+.lista{display:flex;flex-direction:column;gap:10px}
+.link{display:flex;align-items:center;gap:14px;background:var(--cartao);border:1px solid var(--linha);border-radius:16px;padding:14px 16px;transition:border-color .15s ease}
+.link:hover{border-color:var(--magenta)}
+.link .ico{width:40px;height:40px;border-radius:12px;background:#FDE7F2;color:var(--magenta);display:grid;place-items:center;flex:none}
+.link .ico svg{width:20px;height:20px}
+.link b{display:block;font-weight:600;font-size:15px}
+.link span{display:block;font-size:13px;color:var(--suave)}
+.link .fim{margin-left:auto;color:#C9B9C1}
+.link .fim svg{width:16px;height:16px;display:block}
+.link.breve{cursor:default}
+.link.breve .tag{margin-left:auto;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--rosa);background:#FDE7F2;padding:5px 9px;border-radius:99px}
+
+/* rodapé */
+.rodape{text-align:center;margin-top:36px;padding:0 20px}
+.rodape img{width:34px;height:34px;border-radius:50%;opacity:.9}
+.rodape p{font-size:12px;color:var(--suave);margin-top:8px}
+.rodape .script{font-size:22px;margin-top:6px}
+</style>
+</head>
+<body>
+<main class="pagina">
+
+  <header>
+    <div class="capa">
+      <span class="selo">Acessórios femininos</span>
+      <img src="img/destaque.webp" alt="Thais usando óculos de sol gatinho preto">
+    </div>
+    <div class="perfil">
+      <img class="avatar" src="img/logo.webp" alt="Logo Thais Santos">
+      <h1 class="nome">THAIS SANTOS</h1>
+      <span class="script">acessórios</span>
+      <p class="frase">Mostrando a beleza e os valores de mulheres que não têm medo de ousar.</p>
+      <span class="local">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Paraguaçu · MG
+      </span>
+    </div>
+  </header>
+
+  <section class="bloco">
+    <a class="botao-principal" href="https://wa.me/5535984033170?text=Oi%2C%20Thais!%20Vim%20pelo%20Instagram%20e%20quero%20ver%20as%20novidades." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.6-.3z"/></svg>
+      Comprar pelo WhatsApp
+    </a>
+    <div class="vantagens">
+      <span>À pronta entrega</span>
+      <span>Enviamos para todo o Brasil</span>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="titulo-secao">
+      <h2>Escolha seu <em>toque</em></h2>
+      <small>toque e fale com a gente</small>
+    </div>
+    <div class="grade">
+      <a class="cat" href="https://wa.me/5535984033170?text=Oi%2C%20Thais!%20Quero%20ver%20os%20%C3%B3culos%20dispon%C3%ADveis." target="_blank" rel="noopener">
+        <img src="img/oculos.webp" alt="Óculos de sol preso no bolso da calça jeans" loading="lazy">
+        <div class="rotulo"><strong>Óculos</strong><i class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></i></div>
+      </a>
+      <a class="cat" href="https://wa.me/5535984033170?text=Oi%2C%20Thais!%20Quero%20ver%20os%20rel%C3%B3gios%20dispon%C3%ADveis." target="_blank" rel="noopener">
+        <img src="img/relogios.webp" alt="Relógio prateado na mão" loading="lazy">
+        <div class="rotulo"><strong>Relógios</strong><i class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></i></div>
+      </a>
+      <a class="cat" href="https://wa.me/5535984033170?text=Oi%2C%20Thais!%20Quero%20ver%20as%20pe%C3%A7as%20de%20prata%20925." target="_blank" rel="noopener">
+        <img src="img/prata.webp" alt="Colar e anéis de prata" loading="lazy">
+        <div class="rotulo"><strong>Prata 925</strong><i class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></i></div>
+      </a>
+      <a class="cat" href="https://wa.me/5535984033170?text=Oi%2C%20Thais!%20Quero%20ver%20os%20acess%C3%B3rios%20de%20cabelo." target="_blank" rel="noopener">
+        <img src="img/cabelo.webp" alt="Laço de cabelo marrom" loading="lazy">
+        <div class="rotulo"><strong>Cabelo</strong><i class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></i></div>
+      </a>
+      <a class="cat larga" href="https://wa.me/5535984033170?text=Oi%2C%20Thais!%20Quero%20ver%20as%20pulseiras%20e%20braceletes." target="_blank" rel="noopener">
+        <img src="img/pulseiras.webp" alt="Bracelete dourado de borboletas no braço" loading="lazy">
+        <div class="rotulo"><strong>Pulseiras e braceletes</strong><i class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></i></div>
+      </a>
+      <a class="cat" href="https://wa.me/5535984033170?text=Oi%2C%20Thais!%20Quero%20ver%20as%20bolsas%20e%20len%C3%A7os." target="_blank" rel="noopener">
+        <img src="img/bolsas.webp" alt="Bolsa rosa com lenço" loading="lazy">
+        <div class="rotulo"><strong>Bolsas e lenços</strong><i class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></i></div>
+      </a>
+      <a class="cat" href="https://wa.me/5535984033170?text=Oi%2C%20Thais!%20Quero%20ver%20as%20garrafas%20e%20copos%20t%C3%A9rmicos." target="_blank" rel="noopener">
+        <img src="img/garrafas.webp" alt="Garrafa térmica florida" loading="lazy">
+        <div class="rotulo"><strong>Garrafas e copos</strong><i class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></i></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="bloco">
+    <div class="titulo-secao"><h2>Mais da <em>loja</em></h2></div>
+    <div class="lista">
+      <div class="link breve">
+        <i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg></i>
+        <div><b>Loja online</b><span>Compre pelo site</span></div>
+        <em class="tag">Em breve</em>
+      </div>
+      <a class="link" href="https://instagram.com/thaissantosacessorios" target="_blank" rel="noopener">
+        <i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></i>
+        <div><b>Instagram</b><span>@thaissantosacessorios</span></div>
+        <i class="fim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></i>
+      </a>
+      <a class="link" href="https://facebook.com/Thaissantosacessorios" target="_blank" rel="noopener">
+        <i class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.7.4-1 1-1h2V2h-3c-2.6 0-4 1.6-4 4v2H8v3.5h2V22h4V11.5h2.7L17 8z"/></svg></i>
+        <div><b>Facebook</b><span>Thais Santos Acessórios</span></div>
+        <i class="fim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></i>
+      </a>
+      <a class="link" href="https://www.google.com/maps/search/?api=1&query=Thais%20Santos%20Acess%C3%B3rios%20Rua%20Oswaldo%20Costa%2086%20Paragua%C3%A7u%20MG" target="_blank" rel="noopener">
+        <i class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></i>
+        <div><b>Visite a loja</b><span>Rua Oswaldo Costa, 86 · Centro</span></div>
+        <i class="fim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></i>
+      </a>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <span class="script">obrigada por fazer parte deste sonho</span>
+    <p>Thais Santos Acessórios · desde 2016</p>
+  </footer>
+
+</main>
+</body>
+</html>
