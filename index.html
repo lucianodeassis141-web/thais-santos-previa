@@ -46,7 +46,8 @@ h2 em,h1 em{color:var(--rosa)}
 .marca img{height:38px;width:38px;border-radius:50%}
 .marca .ts{font-family:'Instrument Serif';font-size:19px;letter-spacing:.1em;color:var(--malva)}
 .marca .x{color:var(--cinza)}
-.nav nav{display:none;gap:22px;font-weight:600;font-size:14.5px}
+.nav nav{display:none;gap:22px;font-weight:600;font-size:14.5px;white-space:nowrap}
+.nav .btn{white-space:nowrap}
 .nav nav a:hover{color:var(--rosa)}
 .nav .btn{padding:10px 16px;font-size:14px}
 @media(min-width:1000px){.nav nav{display:flex}}
@@ -216,6 +217,44 @@ section.s{padding:84px 0;border-top:1px solid var(--linha)}
 .fazer div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:20px}
 .fazer h3{font-size:18px;margin-bottom:8px}
 .fazer li{color:#E0D2D9;font-size:15px;margin-left:18px;margin-bottom:4px}
+.tts .rot{background:#111;color:#fff}
+.tts .pr{color:#FE2C55}
+.tts .tag{background:#FFE8EC;color:#C8143A}
+@media(min-width:1100px){.mk.tres{grid-template-columns:repeat(3,1fr)}.mk.tres .anuncio{grid-template-columns:100px 1fr}.mk.tres .anuncio img{width:100px}}
+
+/* ERP */
+.erps{display:grid;gap:20px}
+@media(min-width:900px){.erps{grid-template-columns:1fr 1fr}}
+.erp{border:1px solid var(--linha);border-radius:24px;padding:26px;background:#fff;box-shadow:0 16px 40px rgba(29,21,25,.07)}
+.erp h3{font-family:'Instrument Serif';font-weight:400;font-size:40px;line-height:1}
+.erp .sub{color:var(--cinza);font-size:15px;margin:6px 0 18px}
+.plano{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid var(--linha);padding:14px 0}
+.plano b{font-size:16px}
+.plano small{display:block;color:var(--cinza);font-size:13.5px}
+.plano .v{font-family:'Instrument Serif';font-size:30px;white-space:nowrap}
+.plano .v small{display:inline;font-family:'DM Sans';font-size:13px}
+.erp .pe{font-size:13px;color:var(--cinza);margin-top:6px}
+
+/* escopo */
+.escopo{display:grid;gap:12px}
+@media(min-width:900px){.escopo{grid-template-columns:repeat(3,1fr)}}
+.esc{background:var(--fundo);border:1px solid var(--linha);border-radius:20px;padding:20px}
+.esc .n{font-weight:800;color:var(--rosa);font-size:13px;letter-spacing:.12em}
+.esc h3{font-size:18px;margin:6px 0 6px}
+.esc p{color:var(--cinza);font-size:14.5px}
+.valores{display:grid;gap:14px;margin-top:30px}
+@media(min-width:900px){.valores{grid-template-columns:1.3fr 1fr 1fr}}
+.val{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:22px;text-align:left}
+.val small{font-size:12px;font-weight:800;letter-spacing:.14em;color:#F7B6D7}
+.val .g{font-family:'Instrument Serif';font-size:48px;line-height:1.05;margin:6px 0 4px;color:#fff}
+.val p{margin:0;color:#E0D2D9;font-size:15px}
+.time{display:grid;gap:14px;margin-top:14px}
+@media(min-width:700px){.time{grid-template-columns:1fr 1fr}}
+.time div{text-align:left;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px 20px}
+.time small{font-size:12px;font-weight:800;letter-spacing:.14em;color:#F7B6D7}
+.time b{display:block;font-size:20px;margin:4px 0 2px}
+.time span{color:#E0D2D9;font-size:14.5px}
+.argumento{margin-top:14px;background:linear-gradient(135deg,var(--rosa),#8E0F55);border-radius:20px;padding:22px 24px;text-align:left;font-size:18px}
 footer{padding:30px 0 40px;text-align:center;font-size:13px;color:var(--cinza)}
 footer .intens{display:flex;justify-content:center;margin-bottom:8px;color:var(--tinta)}
 
@@ -229,7 +268,7 @@ footer .intens{display:flex;justify-content:center;margin-bottom:8px;color:var(-
 <div class="nav">
   <div class="wrap">
     <div class="marca"><img src="assets/logo.png" alt="Thais Santos"><span class="ts">THAIS SANTOS</span><span class="x">×</span><span class="intens">INTENSOLVE</span></div>
-    <nav><a href="#achados">O que vimos</a><a href="#bio">Link da bio</a><a href="#loja">Loja online</a><a href="#marketplace">Shopee e ML</a><a href="#sop">Processo gravado</a><a href="#painel">Painel</a></nav>
+    <nav><a href="#achados">O que vimos</a><a href="#loja">Loja online</a><a href="#marketplace">Marketplaces</a><a href="#erp">ERP</a><a href="#sop">Processos</a><a href="#escopo">Escopo</a></nav>
     <a class="btn btn-r" href="#proposta">A proposta</a>
   </div>
 </div>
@@ -239,7 +278,7 @@ footer .intens{display:flex;justify-content:center;margin-bottom:8px;color:var(-
     <div class="surge">
       <span class="sc">para a Thais</span>
       <h1>A loja de volta ao online, <em>sem depender de uma pessoa só.</em></h1>
-      <p>Link da bio, loja online própria, Shopee e Mercado Livre. E cada passo da operação gravado, para qualquer pessoa da equipe conseguir tocar.</p>
+      <p>Link da bio, loja online própria, Mercado Livre, Shopee e TikTok Shop. E cada passo da operação gravado, para qualquer pessoa da equipe conseguir tocar.</p>
       <div class="acoes">
         <a class="btn btn-r" href="loja/index.html" target="_blank" rel="noopener">Abrir a loja online</a>
         <a class="btn btn-l" href="#sop">Ver o processo gravado</a>
@@ -338,11 +377,11 @@ footer .intens{display:flex;justify-content:center;margin-bottom:8px;color:var(-
 <section class="s" id="marketplace">
   <div class="wrap">
     <div class="cab surge">
-      <span class="num">04 · SHOPEE E MERCADO LIVRE</span>
-      <h2>A Shopee de volta, <em>e o Mercado Livre junto.</em></h2>
-      <p>A mesma foto, o mesmo cadastro, publicados nos dois. A Shopee volta com o histórico de nota 4,9. O Mercado Livre é um canal novo, onde a loja ainda não está.</p>
+      <span class="num">04 · MARKETPLACES</span>
+      <h2>A Shopee de volta, <em>o Mercado Livre e o TikTok Shop juntos.</em></h2>
+      <p>A mesma foto tratada, o mesmo cadastro, publicados nos três. A Shopee volta com o histórico de nota 4,9. Mercado Livre e TikTok Shop são canais novos, onde a loja ainda não está.</p>
     </div>
-    <div class="mk">
+    <div class="mk tres">
       <div class="canal shp surge">
         <div class="rot"><span>Shopee</span><span>volta</span></div>
         <div class="anuncio"><img src="assets/bracelete.jpg" alt=""><div><h4>Bracelete de Braço Borboletas Dourado Ajustável Feminino</h4><div class="pr">R$ 39,90</div><div class="mini">Paraguaçu, MG · Thais Santos Acessórios</div><span class="tag">Frete grátis</span> <span class="tag">Nota 4,9</span></div></div>
@@ -353,15 +392,47 @@ footer .intens{display:flex;justify-content:center;margin-bottom:8px;color:var(-
         <div class="anuncio"><img src="assets/oculos-gatinho.jpg" alt=""><div><h4>Óculos De Sol Gatinho Feminino Preto Proteção Uv400</h4><div class="pr">R$ 29,90</div><div class="mini">Vendido por Thais Santos Acessórios</div><span class="tag">Chegará amanhã</span></div></div>
         <div class="dados"><b>A demanda já existe:</b> só a marca Petite Jolie tem 731 anúncios no Mercado Livre, e uma revendedora passa de 500 vendas.</div>
       </div>
+      <div class="canal tts surge">
+        <div class="rot"><span>TikTok Shop</span><span>novo</span></div>
+        <div class="anuncio"><img src="assets/relogio-prata.jpg" alt=""><div><h4>Relógio Feminino Prata Elegante com Pulseira de Aço</h4><div class="pr">R$ 59,90</div><div class="mini">Thais Santos Acessórios</div><span class="tag">Compra no vídeo</span></div></div>
+        <div class="dados"><b>O jeito dela de vender:</b> peça no corpo, em vídeo curto. A cliente vê o post e compra ali mesmo, sem sair do app.</div>
+      </div>
     </div>
     <p style="color:var(--cinza);font-size:13.5px;margin-top:16px">Anúncios de exemplo, montados com as fotos reais. Preço, frete e prazo são ilustrativos.</p>
+  </div>
+</section>
+
+<section class="s" id="erp">
+  <div class="wrap">
+    <div class="cab surge">
+      <span class="num">05 · ERP · O SISTEMA DA LOJA</span>
+      <h2>Um estoque só, <em>para todos os canais.</em></h2>
+      <p>O ERP liga a loja online e os marketplaces: vendeu num canal, o estoque baixa em todos, a nota fiscal sai e o pedido cai pronto para separar. Mostramos as duas melhores opções, e a escolha é da Thais.</p>
+    </div>
+    <div class="erps">
+      <div class="erp surge">
+        <h3>Olist ERP</h3>
+        <p class="sub">O antigo Tiny. Forte em marketplace e simples de usar no dia a dia.</p>
+        <div class="plano"><div><b>Avance</b><small>Até 2.000 anúncios, emite NF-e</small></div><div class="v">R$ 66<small>/mês</small></div></div>
+        <div class="plano"><div><b>Construa</b><small>Até 5.000 anúncios, pedidos dos marketplaces importados sem limite</small></div><div class="v">R$ 177<small>/mês</small></div></div>
+        <p class="pe">30 dias de teste grátis.</p>
+      </div>
+      <div class="erp surge">
+        <h3>Bling</h3>
+        <p class="sub">O mais usado por lojas no Brasil, com loja virtual própria integrada.</p>
+        <div class="plano"><div><b>Cobalto</b><small>Até 200 pedidos de marketplace por mês, 5 usuários, notas ilimitadas</small></div><div class="v">R$ 60<small>/mês</small></div></div>
+        <div class="plano"><div><b>Titânio</b><small>A partir de 500 pedidos de marketplace por mês, 50 usuários</small></div><div class="v">R$ 120<small>/mês</small></div></div>
+        <p class="pe">Valor no plano anual. Pedidos da loja online e do balcão não contam no limite.</p>
+      </div>
+    </div>
+    <p style="color:var(--cinza);font-size:13.5px;margin-top:16px">Valores dos sites oficiais em 19/11/2026. A mensalidade do ERP é paga direto à plataforma.</p>
   </div>
 </section>
 
 <section class="s" id="sop">
   <div class="wrap">
     <div class="cab surge">
-      <span class="num">05 · O PROCESSO GRAVADO</span>
+      <span class="num">06 · O PROCESSO GRAVADO</span>
       <h2>Se a pessoa sai, <em>o processo fica.</em></h2>
       <p>Cada tarefa da loja online vira um vídeo curto com o passo a passo escrito ao lado. Quem entra na equipe assiste, segue a lista e faz igual. A loja não volta à estaca zero quando alguém sai.</p>
     </div>
@@ -376,9 +447,9 @@ footer .intens{display:flex;justify-content:center;margin-bottom:8px;color:var(-
 <section class="s" id="painel">
   <div class="wrap">
     <div class="cab surge">
-      <span class="num">06 · PAINEL · DEMONSTRAÇÃO</span>
+      <span class="num">07 · PAINEL · DEMONSTRAÇÃO</span>
       <h2>Todo pedido num lugar, <em>de qualquer canal.</em></h2>
-      <p>Loja online, Shopee, Mercado Livre e WhatsApp caem no mesmo painel. Toque num cartão para andar com ele: quando é enviado, a mensagem para a cliente já sai escrita.</p>
+      <p>Loja online, Mercado Livre, Shopee, TikTok Shop e WhatsApp caem no mesmo painel. Toque num cartão para andar com ele: quando é enviado, a mensagem para a cliente já sai escrita.</p>
     </div>
     <div class="painel surge">
       <div class="p-top"><div class="m"><img src="assets/logo.png" alt=""> Pedidos de hoje</div><span class="selo-demo">Demonstração · dados fictícios</span></div>
@@ -397,11 +468,30 @@ footer .intens{display:flex;justify-content:center;margin-bottom:8px;color:var(-
   <div class="wrap">
     <div class="cab surge"><span class="num">TUDO CONECTADO</span><h2>Do Instagram <em>à casa da cliente.</em></h2></div>
     <div class="fluxo">
-      <div class="et surge"><span class="n">1</span><h3>Vê</h3><p>No Instagram, na Shopee ou no Mercado Livre.</p></div>
+      <div class="et surge"><span class="n">1</span><h3>Vê</h3><p>No Instagram, no TikTok, na Shopee ou no Mercado Livre.</p></div>
       <div class="et surge"><span class="n">2</span><h3>Compra</h3><p>Na loja online ou no marketplace, sem esperar resposta.</p></div>
       <div class="et surge"><span class="n">3</span><h3>Cai no painel</h3><p>Todo pedido no mesmo lugar, de qualquer canal.</p></div>
       <div class="et surge"><span class="n">4</span><h3>Separa</h3><p>Quem estiver na loja segue o processo gravado.</p></div>
       <div class="et surge"><span class="n">5</span><h3>Recebe</h3><p>Embalagem da Thais, cliente avisada, compra de novo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="escopo">
+  <div class="wrap">
+    <div class="cab surge">
+      <span class="num">08 · ESCOPO DE ENTREGA</span>
+      <h2>Tudo o que <em>nós entregamos.</em></h2>
+      <p>Da estrutura dos canais ao último anúncio publicado, com o processo gravado para a Thais e a equipe.</p>
+    </div>
+    <div class="escopo">
+      <div class="esc surge"><span class="n">01</span><h3>Estrutura dos marketplaces</h3><p>Mercado Livre, TikTok Shop e Shopee abertos e configurados: conta, frete, pagamento e reputação desde o primeiro dia.</p></div>
+      <div class="esc surge"><span class="n">02</span><h3>Loja online própria</h3><p>thaissantosacessorios.com.br de volta, com sacola, Pix, cartão, frete pelo CEP e retirada na loja.</p></div>
+      <div class="esc surge"><span class="n">03</span><h3>Link da bio próprio</h3><p>Com a logo, o magenta e as fotos da Thais, levando para a loja e para os dois WhatsApps.</p></div>
+      <div class="esc surge"><span class="n">04</span><h3>ERP implantado</h3><p>Olist ERP ou Bling, à escolha da Thais, ligando estoque, notas e pedidos de todos os canais.</p></div>
+      <div class="esc surge"><span class="n">05</span><h3>Fotos tratadas</h3><p>Edição e tratamento das fotos dos produtos, no padrão que cada marketplace pede.</p></div>
+      <div class="esc surge"><span class="n">06</span><h3>Anúncios publicados</h3><p>Título, descrição e ficha de cada produto, escritos para aparecer na busca de cada marketplace.</p></div>
+      <div class="esc surge" style="grid-column:1/-1"><span class="n">07</span><h3>SOPs: os processos gravados</h3><p>Cada tarefa em vídeo curto com o passo a passo escrito, para a Thais e qualquer pessoa da equipe. A loja online não depende de ninguém em especial.</p></div>
     </div>
   </div>
 </section>
@@ -411,10 +501,20 @@ footer .intens{display:flex;justify-content:center;margin-bottom:8px;color:var(-
     <div class="fecho surge">
       <div class="duplo"><img src="assets/logo.png" alt="Thais Santos"><span>×</span><span class="intens cl" style="font-size:16px">INTENSOLVE</span></div>
       <h2>Vamos colocar a Thais Santos <em>de volta no online?</em></h2>
-      <p>Começando pelo link da bio, depois a loja online e os marketplaces, com cada processo gravado no caminho.</p>
+      <p>Nós cuidamos de tudo do online. A loja só separa e despacha os pedidos.</p>
+      <div class="valores">
+        <div class="val"><small>INVESTIMENTO</small><div class="g">R$ 6.000</div><p>+ 5% sobre as vendas</p></div>
+        <div class="val"><small>PRAZO</small><div class="g">30 dias</div><p>para tudo entregue e no ar</p></div>
+        <div class="val"><small>GARANTIA</small><div class="g">30 dias</div><p>sem venda, devolvemos o valor</p></div>
+      </div>
+      <div class="time">
+        <div><small>ESTRATÉGIA</small><b>Luciano</b><span>Plano dos canais, posicionamento e acompanhamento dos resultados</span></div>
+        <div><small>EXECUÇÃO</small><b>João</b><span>Montagem dos canais, fotos, anúncios e o dia a dia da operação</span></div>
+      </div>
+      <div class="argumento">Sem depender de colaborador e sem prejuízo com troca de equipe. Nós cuidamos de tudo para a Thais. <b>Ela só precisa despachar os produtos.</b></div>
       <div class="fazer">
-        <div><h3>O que fica com a Intensolve</h3><ul><li>Link da bio e loja online, com domínio e publicação</li><li>Shopee de volta e Mercado Livre aberto, com os anúncios cadastrados</li><li>Painel de pedidos de todos os canais</li><li>Os processos gravados em vídeo e passo a passo, e o treinamento da equipe</li></ul></div>
-        <div><h3>O que precisamos da Thais</h3><ul><li>Acesso às contas (Shopee, Instagram, domínio)</li><li>Lista de produtos, preços e estoque</li><li>Aprovar textos, fotos e a identidade da loja</li><li>Uma pessoa da equipe para aprender os processos</li></ul></div>
+        <div><h3>O que fica com a Intensolve</h3><ul><li>Os 3 marketplaces, a loja online e o link da bio no ar</li><li>ERP implantado e ligado a todos os canais</li><li>Fotos tratadas e anúncios publicados</li><li>Os processos gravados em vídeo e passo a passo</li></ul></div>
+        <div><h3>O que precisamos da Thais</h3><ul><li>Acesso às contas (Shopee, Instagram, domínio)</li><li>Lista de produtos, preços e estoque</li><li>Aprovar textos, fotos e a identidade da loja</li><li>Separar e despachar os pedidos</li></ul></div>
       </div>
     </div>
   </div>
